@@ -8,7 +8,7 @@ public class cameraState : MonoBehaviour
     
     public Transform cameraPos;
 
-    private int originFOV = 60;
+    public int originFOV = 60;
     public int WeaponFOV = 45;
     public float FOVSpeedChange;
     private float FOV;
@@ -22,7 +22,10 @@ public class cameraState : MonoBehaviour
 		weapon =player.GetComponent<Weapon>();
         if (weapon == null)
             Debug.Log("xx");
-    }
+
+        FOV = originFOV;
+
+	}
 
     private void Update()
     {

@@ -1110,12 +1110,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5411521674139874656}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72a2ec63304d0f4409af317a6c3e15b8, type: 3}
+  m_Script: {fileID: 11500000, guid: 900e4d352a0de1340a8f8532e7060295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 70
-  SpeedUpMotion: 1.6
-  pushForce: 8
+  health: 100
+  SpeedUpMotion: 1.5
+  pushForce: 5
   maxHealth: 0
   isDie: 0
   breathingSound: {fileID: 6478003054589234661}
@@ -1137,10 +1137,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5411521674139874656}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f1ec41a7db9e8846ab850d39f49b63c, type: 3}
+  m_Script: {fileID: 11500000, guid: 742726dd7638331449c49836533b01b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1.6
+  attackRange: 2
   detectAngle: 45
   detectRadius: 10
   randomMovementRadius: 5
@@ -1150,7 +1150,7 @@ MonoBehaviour:
     m_Bits: 64
   avoidanceAbleMask:
     serializedVersion: 2
-    m_Bits: 63
+    m_Bits: 0
   CanSearchingWithClimbing: 0
   minIdleTime: 2
   maxIdleTime: 5

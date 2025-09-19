@@ -11,7 +11,7 @@ public class UiPlayer : MonoBehaviour
 	public GameObject HitAimUI;
 
 	public Animation bloodScreenAnim;
-
+	 
 	public Text numberBulletsText;
 	public Text numberKills;
 	private int killsCount = 0; 
@@ -74,6 +74,7 @@ public class UiPlayer : MonoBehaviour
 
 	public void SetNumberKills()
 	{
-		numberKills.text = "Kills: " + killsCount++;
+		killsCount++;
+		numberKills.text = "Kills: " + killsCount;
 	}
 }

@@ -8,7 +8,7 @@ public class RespawnSystem : MonoBehaviour
 {
 
     [SerializeField] private Transform[] spawnPositions;
-    private Transform farthestSpawnPoint;
+    private Transform farthestSpawnPoint; 
     private HashSet<Transform> usedSpawnPoints = new HashSet<Transform>();
     [SerializeField] private GameObject EnemyPrefab;
 	private int currentNumberEnemys;

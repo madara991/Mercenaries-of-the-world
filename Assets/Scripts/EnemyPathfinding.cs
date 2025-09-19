@@ -7,7 +7,7 @@ public class EnemyPathfinding : MonoBehaviour
 {
 	// NOTE: MAKE SURE BEFORE START SCENE TO SET ENEMY ON GROUND PERFECT TO AVOID LOSING DESTNATION 
 
-
+	 
 	private Enemy enemy;
 	private NavMeshAgent agent;
 	private Transform player;

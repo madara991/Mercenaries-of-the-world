@@ -1951,10 +1951,10 @@ GameObject:
   - component: {fileID: 3544618334563740077}
   - component: {fileID: 8386256582071270472}
   - component: {fileID: 6705916559368215161}
-  - component: {fileID: 6717464286076237872}
-  - component: {fileID: 9099516496210754028}
   - component: {fileID: 3897635686910333370}
-  - component: {fileID: 8311522972607742750}
+  - component: {fileID: 3907289654097187820}
+  - component: {fileID: 9099516496210754028}
+  - component: {fileID: 8553536010144977939}
   - component: {fileID: 814962322480476530}
   - component: {fileID: 2927046049010696865}
   m_Layer: 6
@@ -2002,11 +2002,8 @@ Animator:
   m_StabilizeFeet: 0
   m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
     are already bound by a Humanoid avatar. These transforms can only be changed
-    by Humanoid clips.\n\tTransform 'mixamorig:LeftArm'\n\tTransform 'mixamorig:Hips'\n\tTransform
-    'mixamorig:LeftForeArm'\n\tTransform 'mixamorig:Spine'\n\tTransform 'mixamorig:LeftHand'\n\tTransform
-    'mixamorig:LeftArm'\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftForeArm'\n\tTransform
-    'mixamorig:Spine'\n\tTransform 'mixamorig:LeftHand'\n\tand more ...\n\tFrom animation
-    clip 'Reloading gun anim'"
+    by Humanoid clips.\n\tTransform 'mixamorig:LeftHand'\n\tFrom animation clip 'Reloading
+    gun anim'\n\tFrom animation clip 'Reloading gun anim'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -2073,19 +2070,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 6055899044092871773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa219803808b99544a595219ff8f34d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fb6a3c922caf4b469bbfeeb855a4e2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 2.5
-  SprintSpeed: 5.5
+  MoveSpeed: 2
+  SprintSpeed: 6
   speedChangeRate: 10
-  health: 8
-  rotationVelocity: 10
+  health: 100
+  rotationVelocity: 5
   sensitivity: 0.5
-  smoothRotation: 0.12
+  smoothRotation: 0.1
   TopClamp: 70
   BottomClamp: -30
-  JumpHeight: 1.2
+  JumpHeight: 1.5
   Gravity: -15
   JumpTimeout: 0.5
   FallTimeout: 0.15
@@ -2096,7 +2093,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   FootstepAudioVolume: 0.5
-  LandingAudioClip: {fileID: 8300000, guid: f940cb009aa1ed34f8886210323eebae, type: 3}
+  LandingAudioClip: {fileID: 8300000, guid: 4c6e2b5f04deca148a3abfa9ecfbdf2d, type: 3}
   FootstepAudioClips:
   - {fileID: 8300000, guid: f940cb009aa1ed34f8886210323eebae, type: 3}
   - {fileID: 8300000, guid: 244551dee4f3a5f4f90bad407aecaeac, type: 3}
@@ -2108,12 +2105,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 00ca7c78142e9414a94760ce0dde2210, type: 3}
   - {fileID: 8300000, guid: 46c80bf55dd3de648be48ea6a7a707cb, type: 3}
   - {fileID: 8300000, guid: 63eb168c82fe16e4ca95b49be9b49a3b, type: 3}
-  - {fileID: 8300000, guid: 4c6e2b5f04deca148a3abfa9ecfbdf2d, type: 3}
-  footstepsVolume: 0.2
-  runStepInterval: 0.3
+  footstepsVolume: 0.5
+  runStepInterval: 0.4
   walkStepInterval: 0.8
   DirectionAim: {fileID: 569794939720122339}
---- !u!114 &6717464286076237872
+--- !u!114 &3897635686910333370
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2122,14 +2118,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 6055899044092871773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fd64fbd20d4d9243a28a08498e49e97, type: 3}
+  m_Script: {fileID: 11500000, guid: 00b14daf269060147aa7a8a771d34485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   attakeDamage: 1
-  bulletspeed: 85
-  timeBetweenShoots: 0.07
-  numberBullets: 0
+  bulletspeed: 100
+  timeBetweenShoots: 0.08
+  numberBullets: 30
   maxNumberBullets: 30
+  isRealoding: 0
   isAiming: 0
   aimTarget: {fileID: 569794939720122339}
   bulletPref: {fileID: 8075476605459167255, guid: bb0ce80feda77aa4e8f8c76a90657ebb,
@@ -2141,6 +2138,25 @@ MonoBehaviour:
   nozzle: {fileID: 2720494272138318876}
   akmGunAudio: {fileID: 2927046049010696865}
   hitAudio: {fileID: 814962322480476530}
+--- !u!114 &3907289654097187820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6055899044092871773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4adf34ed7245db2419ec0b1f243365f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponHandle: {fileID: 4717875142405976403}
+  isActive: 1
+  recoilX: -2
+  recoilY: -1.2
+  recoilZ: 0.5
+  snappiness: 15
+  returnSpeed: 9
 --- !u!114 &9099516496210754028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2157,7 +2173,7 @@ MonoBehaviour:
   - m_Rig: {fileID: 3948841127789651671}
     m_Active: 1
   m_Effectors: []
---- !u!114 &3897635686910333370
+--- !u!114 &8553536010144977939
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2166,26 +2182,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6055899044092871773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e44a6eeb6efbea945aee046790c1dbb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponHandle: {fileID: 4717875142405976403}
-  isActive: 1
-  recoilX: -2
-  recoilY: 0.2
-  recoilZ: 0.5
-  snappiness: 12
-  returnSpeed: 6
---- !u!114 &8311522972607742750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6055899044092871773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a499cc7b797db214ea5a3584dc7716cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 4891b2d31db01e64880e495d902dd0d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pointAimUI: {fileID: 0}

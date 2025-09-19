@@ -146,9 +146,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 8075476605459167255}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 853b5f5e90af43b4ca637615630f8cd8, type: 3}
+  m_Script: {fileID: 11500000, guid: 3547bf26a2f643447a34036af1abbc7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedBullet: 85
-  bloodEffect: {fileID: 6190311757151146045, guid: e69e0ecb4a4d5824b884a47ca3d47f9b,
-    type: 3}
+  speedBullet: 0
+  bloodEffect: {fileID: 8075476605459167255}

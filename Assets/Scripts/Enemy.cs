@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour 
-{
+{ 
     private int attackDamage;
     public int health;
 	public float SpeedUpMotion = 1.5f; // when low health speed up

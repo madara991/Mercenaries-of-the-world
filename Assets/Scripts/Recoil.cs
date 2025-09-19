@@ -11,7 +11,7 @@ public class Recoil : MonoBehaviour
 	[SerializeField] private float recoilX;
     [SerializeField] private float recoilY;
     [SerializeField] private float recoilZ;
-
+     
 
     [SerializeField] private float snappiness;
     [SerializeField] private float returnSpeed;
@@ -22,7 +22,8 @@ public class Recoil : MonoBehaviour
     private void Start()
     {
         myWeapon = GetComponent<Weapon>();
-    }
+
+	}
     void Update()    
     {
 		if (!isActive && !myWeapon.isAiming)

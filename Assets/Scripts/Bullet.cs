@@ -8,8 +8,11 @@ public class Bullet : MonoBehaviour
 {
     [HideInInspector]
     public float speedBullet;
-    public GameObject bloodEffect;
 
+    private void OnEnable()
+    {
+        Destroy(gameObject, 3f);
+    }
     private void Update()
     {
 		Vector2 centarScreen = new Vector2(Screen.width / 2, Screen.height / 2);
@@ -24,10 +27,8 @@ public class Bullet : MonoBehaviour
     // on the "Weapon" script.
 	private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider == null)
+        if (collision.collider != null)
             Destroy(gameObject);
-        else
-            Destroy(gameObject, 2f);
 
 	}
 }

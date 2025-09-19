@@ -9,7 +9,7 @@ using UnityEngine.Animations.Rigging;
 using UnityEngine.UIElements;
 
 public class FirstPersonController : MonoBehaviour
-{
+{ 
 	public float MoveSpeed = 2.0f;
 	public float SprintSpeed = 6f;
 	public float speedChangeRate = 10f;

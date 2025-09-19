@@ -13,7 +13,7 @@ public class Weapon : MonoBehaviour
 	public int numberBullets;
 	public int maxNumberBullets = 30;
 
-	public bool isRealoding;
+	public bool isRealoding; 
 
 
 
