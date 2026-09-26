@@ -1,6 +1,6 @@
 ## Mercenaries Of The World Game Demo | Unity 2022.3.16f1
 
-A professional first-person shooter Demo where you fight monsters after humanity has become extinct.
+A  first-person shooter Demo where you fight monsters after humanity has become extinct.
 The behavior of the enemies' artificial intelligence has been created with basic control for the first perspective, in addition to the weapon system with recoil and its movement linked to the character's animations and IK parts.
 
 ![Screenshot_08-10-2024-12-02-39](https://github.com/user-attachments/assets/c36d2ce8-3792-456e-a18d-1df676a7b22d)
